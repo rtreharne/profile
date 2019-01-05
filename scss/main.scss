@@ -1,0 +1,92 @@
+body {
+  background-color: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
+}
+
+br {
+  margin: 10px;
+}
+.main {
+  background-image: url("../img/background.jpg");
+  padding: 10%;
+}
+.vertical-center {
+
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+.left-bar {
+  text-align: center;
+}
+.profile-pic {
+  border-radius: 50%;
+  display: block;
+  max-width:80%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  border: 5px solid #fff;
+}
+
+button {
+  width: 90%;
+  margin: 5%;
+}
+
+p.bio{
+  width: 95%;
+  margin: 2.5%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
+
+.social {
+  text-align: center;
+  width:60%;
+  margin: 5% 20%;
+  font-size: 2em;
+}
+
+h1.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tags{
+  margin: 5%;
+}
+
+span.badge {
+  margin: 1px 2px;
+  font-size: 1em;
+}
+
+.stuff p, h3 {
+  width: 90%;
+  margin: 5%;
+  color: #7b7b7b;
+}
+
+.stuff p {
+  font-size: 1.2em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  color: #007bff;
+  cursor: pointer;
+
+}
+
+.stuff p:hover {
+  color: #0062cc;
+}
+
+
+.row.stuff {
+  width: 100%;
+}

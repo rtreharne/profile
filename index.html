@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <title>my jade template</title>
+  </head>
+  <body>
+    <div class="full-height vertical-center main">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="title">Robert Treharne PhD</h1>
+        </div>
+        <div class="col-sm-3 left-bar"><img src="img/profile_pic_2.jpg" class="profile-pic">
+          <div class="row social">
+            <div class="col-6"><a href="https://twitter.com/robtreharne" target="_blank"><i class="fab fa-twitter"></i></a></div>
+            <div class="col-6"><a href="https://www.linkedin.com/in/robert-treharne-3a621a50/?originalSubdomain=uk" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <p class="bio">I am a Lecturer in<a href="https://www.heacademy.ac.uk/individuals/strategic-priorities/technology-enhanced-learning" target="_blank"> Technology Enhanced Learning</a> at the University of Liverpool.
+             I have a background in Physics, with a PhD in Solar Energy from the University of Durham (2011).
+             I teach maths, statistics and web design.
+             I specialise in creating web applications that improve the student experience.
+          </p>
+          <p class="bio"> I am the director of<a href="http://hipy.uk" target="_blank"> HiPy</a> : A grass-roots coding initiative that aims to increase student employability by introducing them to Python coding.</p>
+        </div>
+        <div class="col-sm-3"><a href="https://scholar.google.co.uk/citations?hl=en&amp;user=bCjxW70AAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank">
+            <button type="button" class="btn btn-primary">Publications</button></a>
+          <div class="row tags"><a href="https://warwick.ac.uk/fac/sci/physics/prospective/undergraduate_study/physics_courses/" target="_blank"><span class="badge badge-secondary">MPhys</span></a><a href="https://www.dur.ac.uk/physics/" target="_blank"><span class="badge badge-secondary">PhD</span></a><a href="https://www.python.org/doc/essays/blurb/" target="_blank"><span class="badge badge-secondary">Python</span></a><a href="https://www.djangoproject.com/" target="_blank"><span class="badge badge-secondary">Django</span></a><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank"><span class="badge badge-secondary">Javascript</span></a><a href="https://www.latex-project.org/" target="_blank"><span class="badge badge-secondary">Latex</span></a><a href="https://en.wikipedia.org/wiki/Markdown" target="_blank"><span class="badge badge-secondary">Markown</span></a><a href="https://www.w3schools.com/nodejs/nodejs_intro.asp" target="_blank"><span class="badge badge-secondary">Node.js</span></a><a href="https://opensource.com/resources/linux" target="_blank"><span class="badge badge-secondary">Linux</span></a><span class="badge badge-secondary">CSS</span><span class="badge badge-secondary">Jade/Pug</span><span class="badge badge-secondary">R</span><span class="badge badge-secondary">Blackboard</span><span class="badge badge-secondary">LiftUpp</span><span class="badge badge-secondary">PyCharm</span><span class="badge badge-secondary">Atom</span><span class="badge badge-secondary">Statistics</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="container vertical-center">
+      <div class="row stuff">
+        <div class="col-sm-4 stuff">
+          <h3>Projects</h3>
+          <p id="module-choices">Module Choices</p>
+          <p>Escape From Life</p>
+          <p>Attendance Monitoring</p>
+          <p>Rate My Thing</p>
+          <p>Researcher Opportunities</p>
+          <p>Augmented Reality VLE</p>
+          <p>Write Your Thesis in Latex</p>
+        </div>
+        <div class="col-sm-4 stuff">
+          <h3>Reading</h3>
+          <p>Caves of Steel - I. Asimov</p>
+          <p>The Power of Now - Eckhart Tolle</p>
+          <p>Good Omens - Terry Pratchett & Neil Gaiman</p>
+        </div>
+        <div class="col-sm-4 stuff">
+          <h3>Listening</h3>
+          <p>High Violet - The National</p>
+          <p>Ghost - Radical Face</p>
+          <p>Dream of Gerontius - Elgar</p>
+          <p>Tomorrow's Modern Boxes - Thom Yorke</p>
+          <p>Souljacker - Eels</p>
+          <p>The Trombone Master - J. J. Johnson</p>
+          <p>Charlie Parker With Strings</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<div id="module-choices-modal" role="dialog" class="modal fade">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" data-dismiss="modal" class="close">×</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+    $("p").click(function(){
+      tag = "#" + $(this).attr("id") + "-modal";
+      console.log(tag);
+      //$(tag).modal();
+   });
+  });
+</script>

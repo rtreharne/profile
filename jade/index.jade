@@ -1,0 +1,121 @@
+doctype html
+html
+  head
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='https://fonts.googleapis.com/css?family=Raleway|Roboto', rel='stylesheet')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.6.3/css/all.css', integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/', crossorigin='anonymous')
+    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS", crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js", integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k", crossorigin="anonymous")
+    link(href="css/main.css", rel="stylesheet")
+    title my jade template
+  body
+    .full-height.vertical-center.main
+
+      .row
+        .col-sm-12
+          h1.title Robert Treharne PhD
+        .col-sm-3.left-bar
+          img(src="img/profile_pic_2.jpg").profile-pic
+
+          .row.social
+            .col-6
+              a(href="https://twitter.com/robtreharne" target="_blank")
+                i.fab.fa-twitter
+            .col-6
+              a(href="https://www.linkedin.com/in/robert-treharne-3a621a50/?originalSubdomain=uk" target="_blank")
+                i.fab.fa-linkedin-in
+
+
+        .col-sm-6
+          p.bio
+            | I am a Lecturer in
+            a(href="https://www.heacademy.ac.uk/individuals/strategic-priorities/technology-enhanced-learning" target="_blank")  Technology Enhanced Learning
+            |  at the University of Liverpool.
+            |  I have a background in Physics, with a PhD in Solar Energy from the University of Durham (2011).
+            |  I teach maths, statistics and web design.
+            |  I specialise in creating web applications that improve the student experience.
+          p.bio
+            |  I am the director of
+            a(href="http://hipy.uk" target="_blank")  HiPy
+            |  : A grass-roots coding initiative that aims to increase student employability by introducing them to Python coding.
+
+        .col-sm-3
+          a(href="https://scholar.google.co.uk/citations?hl=en&user=bCjxW70AAAAJ&view_op=list_works&sortby=pubdate" target="_blank")
+            button.btn.btn-primary(type='button') Publications
+          .row.tags
+            a(href="https://warwick.ac.uk/fac/sci/physics/prospective/undergraduate_study/physics_courses/" target="_blank")
+              span.badge.badge-secondary MPhys
+            a(href="https://www.dur.ac.uk/physics/" target="_blank")
+              span.badge.badge-secondary PhD
+            a(href="https://www.python.org/doc/essays/blurb/" target="_blank")
+              span.badge.badge-secondary Python
+            a(href="https://www.djangoproject.com/" target="_blank")
+              span.badge.badge-secondary Django
+            a(href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank")
+              span.badge.badge-secondary Javascript
+            a(href="https://www.latex-project.org/" target="_blank")
+              span.badge.badge-secondary Latex
+            a(href="https://en.wikipedia.org/wiki/Markdown" target="_blank")
+              span.badge.badge-secondary Markown
+            a(href="https://www.w3schools.com/nodejs/nodejs_intro.asp" target="_blank")
+              span.badge.badge-secondary Node.js
+            a(href="https://opensource.com/resources/linux" target="_blank")
+              span.badge.badge-secondary Linux
+            span.badge.badge-secondary CSS
+            span.badge.badge-secondary Jade/Pug
+            span.badge.badge-secondary R
+            span.badge.badge-secondary Blackboard
+            span.badge.badge-secondary LiftUpp
+            span.badge.badge-secondary PyCharm
+            span.badge.badge-secondary Atom
+            span.badge.badge-secondary Statistics
+
+    .container.vertical-center
+      .row.stuff
+        .col-sm-4.stuff
+          h3 Projects
+          p#module-choices Module Choices
+          p Escape From Life
+          p Attendance Monitoring
+          p Rate My Thing
+          p Researcher Opportunities
+          p Augmented Reality VLE
+          p Write Your Thesis in Latex
+
+        .col-sm-4.stuff
+          h3 Reading
+          p Caves of Steel - I. Asimov
+          p The Power of Now - Eckhart Tolle
+          p Good Omens - Terry Pratchett & Neil Gaiman
+        .col-sm-4.stuff
+          h3 Listening
+          p High Violet - The National
+          p Ghost - Radical Face
+          p Dream of Gerontius - Elgar
+          p Tomorrow's Modern Boxes - Thom Yorke
+          p Souljacker - Eels
+          p The Trombone Master - J. J. Johnson
+          p Charlie Parker With Strings
+
+
+#module-choices-modal.modal.fade(role='dialog')
+  .modal-dialog
+    // Modal content
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal') ×
+        h4.modal-title Modal Header
+      .modal-body
+        p Some text in the modal.
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Close
+
+script.
+  $(document).ready(function(){
+    $("p").click(function(){
+      tag = "#" + $(this).attr("id") + "-modal";
+      console.log(tag);
+      //$(tag).modal();
+   });
+  });

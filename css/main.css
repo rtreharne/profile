@@ -6,7 +6,6 @@ br {
   margin: 10px; }
 
 .main {
-  background-image: url("../img/background.jpg");
   padding: 10%; }
 
 .vertical-center {
@@ -31,7 +30,7 @@ br {
 
 button {
   width: 90%;
-  margin: 5%; }
+  margin: 5px; }
 
 p.bio {
   width: 95%;

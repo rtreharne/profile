@@ -53,13 +53,11 @@ p.bio{
   font-size: 2em;
 }
 
-h1.title {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+
 
 .tags{
   margin: 5%;
+  width: 80%;
 }
 
 span.badge {
@@ -89,4 +87,11 @@ span.badge {
 
 .row.stuff {
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .name {
+    text-align: center;
+  }
+
 }
